@@ -1,0 +1,73 @@
+.hero .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .slide {
+    display: none;
+    width: 100%;
+    transition: opacity 1s ease;
+}
+
+.hero .slide img {
+    width: 100%;
+}
+
+.hero .show {
+    display: block;
+    opacity: 1;
+}
+
+.hero .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+}
+
+.hero .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    right: 10px;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+}
+
+.hero .prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero .dots {
+    text-align: center;
+    /* margin-top: -20px; */
+}
+
+.hero .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.hero .active,
+.dot:hover {
+    background-color: #717171;
+}

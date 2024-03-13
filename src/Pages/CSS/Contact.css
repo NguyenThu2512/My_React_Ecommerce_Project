@@ -1,0 +1,24 @@
+.contact-container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    margin: 30px auto;
+    gap: 30px;
+}
+
+.contact-left {
+    background-color: #222222;
+    color: rgb(224, 222, 222);
+    margin-top: 25px;
+    padding: 30px 40px;
+}
+
+.contact-left div {
+    border-bottom: 1px dashed white;
+}
+
+@media (max-width:800px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}

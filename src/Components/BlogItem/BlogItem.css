@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+.blogitem-img {
+    height: 20vw;
+}
+
+.blogitem img {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.blogitem-content {
+    padding: 18px;
+    background-color: #222222;
+    color: rgb(231, 228, 228);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.date-access {
+    display: flex;
+    column-gap: 20px;
+}
+
+.short-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    /* Số dòng tối đa bạn muốn hiển thị */
+    max-height: 3 * 1.2em;
+    /* Số dòng tối đa * chiều cao của mỗi dòng */
+}
+
+@media(max-width:800px) {
+    .blogitem img {
+        height: 30vw;
+    }
+    .blogitem-img {
+        height: 30vw;
+    }
+}
+
+@media(max-width:500px) {
+    .blogitem img {
+        height: 50vw;
+        object-fit: cover;
+    }
+    .blogitem-img {
+        height: 50vw;
+    }
+}

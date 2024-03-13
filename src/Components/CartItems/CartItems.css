@@ -1,0 +1,118 @@
+.cartitems {
+    display: grid;
+    grid-template-columns: 8fr 3fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+.cartitems .heading {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.cartitems .heading span {
+    color: #ca9358
+}
+
+.cartitems-heading {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+    background-color: #ECECEC;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cartitems-main {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    padding-top: 15px;
+    gap: 15px;
+}
+
+.cartitems-main .product {
+    display: flex;
+    gap: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.cartitems-main .product .remove {
+    margin-top: 20px;
+    font-weight: 500;
+    color: rgb(180, 6, 6);
+    cursor: pointer;
+}
+
+.cartitems-main .product .remove i {
+    margin-right: 3px;
+}
+
+.cartitems-main .product img {
+    width: 120px;
+}
+
+.cartitems-main .quantity {
+    display: flex;
+}
+
+.cartitems-main .quantity div {
+    border: 1px solid gray;
+    height: 30px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.cartitems-main .quantity input {
+    width: 30px;
+    padding-left: 7px;
+    border: none;
+    outline: none;
+    height: 24px;
+    margin-top: -10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cartitems-total {
+    border: 1px solid rgb(213, 210, 210);
+    padding: 30px 20px;
+    margin: 20px 0;
+}
+
+.cartitems-total div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+.cartitems-total button {
+    width: 100%;
+    padding: 15px 30px;
+    border: none;
+    background-color: #222222;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media(max-width:1024px) {
+    .cartitems {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:800px) {
+    .cartitems-main {
+        grid-template-columns: 3fr 1fr;
+    }
+}

@@ -1,0 +1,78 @@
+.customerreview {
+    max-width: 1200px;
+}
+
+.customerreview .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.customerreview .slide {
+    display: none;
+    width: 100%;
+    transition: opacity 1s ease;
+}
+
+.customerreview .slide img {
+    width: 100%;
+    height: auto;
+}
+
+.customerreview .show {
+    display: block;
+    opacity: 1;
+}
+
+.customerreview .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+}
+
+.customerreview .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    right: 10px;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+}
+
+.customerreview .prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.customerreview .dots {
+    text-align: center;
+    margin-top: -20px;
+}
+
+.customerreview .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.customerreview .active,
+.dot:hover {
+    background-color: #717171;
+}

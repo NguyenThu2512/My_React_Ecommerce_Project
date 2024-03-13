@@ -1,0 +1,43 @@
+.description-comment {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.description-comment-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.description-comment-buttons button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    color: white;
+    background-color: #222222;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.description-comment-buttons .active {
+    background-color: #D0A97E;
+    color: white;
+}
+
+.description-comment-content {
+    background-color: #F4F4F4;
+    padding: 30px;
+}
+
+.description-comment-content img {
+    display: block;
+    margin: auto;
+}
+
+.comment-form {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+
+.comment-form img {
+    width: 50px;
+}
